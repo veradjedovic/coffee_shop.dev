@@ -1,0 +1,27 @@
+h1, h2, h3, h4, h5, h6{
+    text-align: $body_t_align;
+}
+
+a:link{
+    color: $link_color;
+}
+
+a:visited{
+    color: $link_visited;
+}
+
+a:hover{
+    color: $link_hover;
+}
+
+a:active{
+    color: $link_active;
+}
+
+body
+{
+    color: $body_color;
+    font-family: $body_f_family;
+    background: $body_bg_color;
+    text-align: $body_t_align;
+}

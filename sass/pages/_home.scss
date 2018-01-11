@@ -1,0 +1,25 @@
+@import "../layout/header";
+@import "../layout/footer";
+
+@import "../components/forms";
+@import "../components/buttons";
+
+.glavni
+{
+    margin-top: 300px;
+
+    &-podnaslov
+    {
+        padding: $article_title_padding;
+    }
+
+    &-clanak
+    {
+        text-align: $article_align;
+    }
+
+    &-galerija
+    {
+        background-color: $bg_galerija;
+    }
+}

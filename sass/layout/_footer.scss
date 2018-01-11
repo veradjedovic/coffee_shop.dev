@@ -1,0 +1,9 @@
+.podnozje
+{
+    @include b_foot_and_nav();
+    
+    &-opis
+    {
+    	@include foot_and_nav();
+    }
+}

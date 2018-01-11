@@ -1,0 +1,9 @@
+.contact .submit 
+{
+    @include button(30%, auto);
+}
+
+.contact .submit:hover
+{
+    background-color: $bg_btn_hover;
+}

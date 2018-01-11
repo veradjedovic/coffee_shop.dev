@@ -1,0 +1,21 @@
+.zaglavlje
+{
+    @include b_foot_and_nav();
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
+
+    &-naslov
+    {
+        color: $body_bg_color;
+        padding: $header_title_padding;
+
+    }
+    
+    &-navigacija
+    {
+        @include foot_and_nav();
+    }
+}

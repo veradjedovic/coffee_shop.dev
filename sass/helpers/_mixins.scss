@@ -1,0 +1,31 @@
+@mixin foot_and_nav ($background: rgba(255, 255, 255, 0.5), $height: 50px, $line-height: 50px) 
+{
+	background-color: $background;
+    height: $height;
+    line-height: $line-height;
+}
+
+@mixin b_foot_and_nav($background: url("https://images.pexels.com/photos/773958/pexels-photo-773958.jpeg?h=350&auto=compress&cs=tinysrgb") no-repeat fixed center center, $background-size: cover)
+{
+	background: $background;
+    background-size: $background-size;
+}
+
+@mixin button($width, $margin, $background-color: #cfc0af, $color: #30271d, $font-size: 15px, $font-family: ('Ubuntu', sans-serif))
+{
+	width: $width;
+    margin: $margin;
+    background-color: $background-color;
+    color: $color;
+    font-family: $font-family;
+    font-size: $font-size;
+}
+
+@mixin input($width, $padding: 10px, $border: 1px solid #8f7556, $border-radius: 10px, $display: block)
+{
+	display: $display;
+    width: $width;
+    padding: $padding; 
+    border: $border;
+    border-radius: $border-radius;
+}
