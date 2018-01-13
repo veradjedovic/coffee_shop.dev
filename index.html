@@ -9,6 +9,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="https://images.pexels.com/photos/773958/pexels-photo-773958.jpeg?h=350&auto=compress&cs=tinysrgb" type="image/png" sizes="16x16">
         <link rel="stylesheet" type="text/css" href="css/site.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/skripte.js"></script>
     </head>
     <body>
     	<!-- Zaglavlje -->
@@ -93,5 +95,19 @@
         </footer>
         <!-- Podnozje kraj -->
 
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.zaglavlje-navigacija').hide();
+                $('.zaglavlje').mouseover(function(){
+                    $('.zaglavlje-navigacija').fadeIn('slow');
+                });
+                $('.zaglavlje').mouseleave(function(){
+                    $('.zaglavlje-navigacija').fadeOut('slow');
+                });
+                // $('.zaglavlje').hover( function() { $('.zaglavlje-navigacija').toggle("slow"); } );
+                var body = $("form").val(); 
+                console.log(body);
+            });
+        </script>
     </body>
 </html>
